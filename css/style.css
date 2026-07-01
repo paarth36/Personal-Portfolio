@@ -813,6 +813,41 @@ header{
     }
 
 }
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:3%;
+        width:94%;
+        display:none;
+        flex-direction:column;
+        background:#111;
+        border:1px solid rgba(255,255,255,.08);
+        border-radius:18px;
+        padding:20px;
+        gap:18px;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+}
 /* ==================================================
    FEATURED PROJECT
 ================================================== */
